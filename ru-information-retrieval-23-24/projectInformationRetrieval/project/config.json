@@ -1,0 +1,88 @@
+[
+    {
+        "name": "bert",
+        "learning_rate": 1e-4,
+        "num_epochs": 2,
+        "scheduler": "constantlr",
+        "balance_classes": true
+    },
+    {
+        "name": "bert",
+        "learning_rate": 1e-4,
+        "num_epochs": 1,
+        "scheduler": "constantlr"
+    },
+    {
+        "name": "bert",
+        "learning_rate": 1e-5,
+        "num_epochs": 2,
+        "scheduler": "constantlr"
+    },
+    {
+        "name": "bert",
+        "learning_rate": 1e-5,
+        "num_epochs": 1,
+        "scheduler": "constantlr"
+    },
+
+    {
+        "name": "peft_bert",
+        "learning_rate": 1e-4,
+        "num_epochs": 2,
+        "scheduler": "constantlr",
+        "lora_config": {
+            "r": 16,
+            "alpha": 16
+        }
+    },
+    {
+        "name": "peft_bert",
+        "learning_rate": 1e-4,
+        "num_epochs": 1,
+        "scheduler": "constantlr",
+        "lora_config": {
+            "r": 16,
+            "alpha": 16
+        }
+    },
+    {
+        "name": "peft_bert",
+        "learning_rate": 1e-5,
+        "num_epochs": 2,
+        "scheduler": "constantlr",
+        "lora_config": {
+            "r": 16,
+            "alpha": 16
+        }
+    },
+    {
+        "name": "peft_bert",
+        "learning_rate": 1e-5,
+        "num_epochs": 1,
+        "scheduler": "constantlr",
+        "lora_config": {
+            "r": 16,
+            "alpha": 16
+        }
+    },
+    {
+        "name": "peft_bert",
+        "learning_rate": 1e-4,
+        "num_epochs": 1,
+        "scheduler": "constantlr",
+        "lora_config": {
+            "r": 4,
+            "alpha": 4
+        }
+    },
+    {
+        "name": "peft_bert",
+        "learning_rate": 1e-5,
+        "num_epochs": 1,
+        "scheduler": "constantlr",
+        "lora_config": {
+            "r": 4,
+            "alpha": 4
+        }
+    }
+]

@@ -1,0 +1,34 @@
+[
+    {
+        "name": "peft_bert",
+        "learning_rate": 1e-4,
+        "num_epochs": 2,
+        "scheduler": "constantlr",
+        "lora_config": {
+            "r": 4,
+            "alpha": 4
+        },
+        "info": "decide which lora is the best, do this lora with balanced"
+    },
+
+    {
+        "name": "peft_bert",
+        "learning_rate": 1e-4,
+        "num_epochs": 0,
+        "scheduler": "constantlr",
+        "lora_config": {
+            "r": 0,
+            "alpha": 0
+        },
+        "balance_classes": true
+    },
+
+    {
+        "name": "bert",
+        "learning_rate": 1e-5,
+        "num_epochs": 2,
+        "scheduler": "constantlr",
+        "balance_classes": true
+    }
+   
+]
