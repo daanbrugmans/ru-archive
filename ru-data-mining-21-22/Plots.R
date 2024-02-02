@@ -8,7 +8,7 @@ library(caret)
 # Change working directory if needed, Josse.
 setwd("C:/Users/Daan/Documents/Projecten/DataMiningResearch")
 
-brfss.df <- read.csv("BRFSS2015Preprocessed.csv", header = T)
+brfss.df <- read.csv("Data/BRFSS2015Preprocessed.csv", header = T)
 
 summary(brfss.df)
 
