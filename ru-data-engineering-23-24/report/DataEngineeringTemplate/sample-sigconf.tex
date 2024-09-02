@@ -1,0 +1,114 @@
+\documentclass[sigconf]{acmart}
+
+\setcopyright{none}
+\settopmatter{printacmref=false}
+\renewcommand\footnotetextcopyrightpermission[1]{} 
+
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{lipsum}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstset{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\acmConference[Data Engineering]{}{June 2024}{Radboud University, Nijmegen}
+\acmDOI{}
+\acmISBN{}
+\acmYear{}
+\acmSubmissionID{}
+
+%%
+%% end of the preamble, start of the body of the document source.
+\begin{document}
+
+%%
+%% The "title" command has an optional parameter,
+%% allowing the author to define a "short title" to be used in page headers.
+\title[]{Title}
+
+%%
+%% The "author" command and its associated commands are used to define
+%% the authors and their affiliations.
+\author{Firstname Lastname}
+
+%%
+%% By default, the full list of authors will be used in the page
+%% headers. Often, this list is too long, and will overlap
+%% other information printed in the page headers. This command allows
+%% the author to define a more concise list
+%% of authors' names for this purpose.
+\renewcommand{\shortauthors}{Firstname Lastname}
+
+%%
+%% The abstract is a short summary of the work to be presented in the
+%% article.
+\begin{abstract}
+  \lipsum[0-1]
+\end{abstract}
+
+%%
+%% This command processes the author and affiliation and title
+%% information and builds the first part of the formatted document.
+\maketitle
+
+\section{Introduction}
+\lipsum[1-2]
+
+\section{Quality Assessment}
+\lipsum[2-3]
+
+\section{Reshaping/wrangling}
+\lipsum[3-4]
+
+\section{Serving}
+\lipsum[4-5]
+
+\section{Lifecycle}
+\lipsum[5-6]
+
+\section{Conclusion}
+\lipsum[6-8]
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{sample-base}
+
+\appendix
+
+\section{Quality Assessment}
+
+You can use the appendix to include longer code snippets~\cite{raasveldt:2019} that do not fit or belong in the main article text. Use code listings, like the ones provided below.
+
+\begin{lstlisting}[language=Python]
+import duckdb
+# your code here
+\end{lstlisting}
+
+Or for another language, like SQL:
+
+\begin{lstlisting}[language=SQL]
+SELECT COUNT(*)
+WHERE col1 IS NULL
+\end{lstlisting}
+
+\end{document}
